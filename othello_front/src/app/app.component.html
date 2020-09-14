@@ -1,0 +1,5 @@
+<div class="board">
+  <div class="row" *ngFor="let row of board index as i">
+    <div class="cell" *ngFor="let cell of row index as j" [ngClass]="getCellClass(cell)" (click)="onClickCell(i, j)"></div>
+  </div>
+</div>
